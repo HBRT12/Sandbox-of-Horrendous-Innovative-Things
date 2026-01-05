@@ -1,0 +1,29 @@
+{
+  "data": {
+    "Easy": {
+      "wins": 2,
+      "losses": 0,
+      "best_time": 12,
+      "misflags": 0
+    },
+    "Medium": {
+      "wins": 0,
+      "losses": 0,
+      "best_time": null,
+      "misflags": 0
+    },
+    "Hard": {
+      "wins": 0,
+      "losses": 1,
+      "best_time": null,
+      "misflags": 1
+    },
+    "God": {
+      "wins": 0,
+      "losses": 0,
+      "best_time": null,
+      "misflags": 0
+    }
+  },
+  "hash": "1085fbf97a43a44fb5d78df4c3884ce4d652df98e4dcc3668c86040705fd8a81"
+}

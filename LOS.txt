@@ -1,0 +1,140 @@
+import time
+import random
+#NOTES
+#to add a command, use def above input and use if statement below it.
+#REMEMBER TO ADD COMMANDS TO HELP LIST!
+print("Defining Commands...")
+def los_help():
+	print("""Command list:
+		Misc:
+	LOS.help: Displays command list. 
+	LOS.info: Displays info about LumenOS.
+	LOS.ping: Recieve a test output
+	LOS.settings: opens OS settings	
+		
+		Calculations:
+	LOS.add: Add 2 floats together
+	LOS.subtract: Subtract 2 floats from eachother
+	LOS.mult: Multiplies a float by another float
+	LOS.div: Divides a float by another float
+	LOS.mod: uses modulus (%) to get a remainder
+	LOS.average: Gets the average of a list of numbers
+	LOS.power: Puts a number to an inputted expoent
+	LOS.sqroot: Square roots a number
+	LOS.customroot: uses a user-selected root on a number
+			
+		Variables:
+	LOS.frecall: Displays stored floats
+	LOS.srecall: Displays stored strings
+	LOS.lrecall: Displays stored lists
+	LOS.recallall: Displays all variables (exc. settings variables)
+	LOS.wipe: Removes selected data sets""")
+def los_info():
+	print(""" L       U   U  M   M  EEEEE  N   N      OOO   SSSS
+ L       U   U  MM MM  E      NN  N     O   O  S
+ L       U   U  M M M  EEEE   N N N     O   O  SSS
+ L       U   U  M   M  E      N  NN     O   O     S
+ LLLLL   UUUUU  M   M  EEEEE  N   N      OOO   SSSS""")
+	print("\nLumenOS is a python project developed by Hubert Grzeszczyk. This project was initially thought of as a simple program with a few commands that can do maths and other small functions. Since i am not a big tech company like Microsoft, I can't really licence this program, therefore this program is entirely free to use and is entirely open-source, so feel free to make any change you would like")
+def los_settings():
+	print("You are now changing LumenOS settings. Type 1 for on and 0 for off")
+	while True:
+		completenotifs = input("completenotifs: recieve a notification when a command completes")	
+		if completenotifs == "0":
+			print("Off: you will not recieve a notification when you finish a command\n")
+			break
+		elif completenotifs == "1":
+			print("On: you will now see 'Command complete!' every time you finish a command\n")
+			break
+		else:
+			print("ERROR: Invalid choice. Please type 0 or 1")
+	while True:
+			varautostore = input("varautostore: Automatically store calculation answers to an empty variable")
+			if varautostore == "0":
+				print("Off: you will be asked if you want to store a value at the end of certain commands\n")
+				break
+			elif varautostore == "1":
+				print("On: Outputs will be automatically stored to any empty variable\n")
+				break
+			else:
+				print("ERROR: Invalid choice. Please type 0 or 1")
+	if completenotifs == "1":
+		print("Command complete!")
+time.sleep(3)
+print("Successfully defined!\n")
+time.sleep(3)
+print("Opening variables...")
+fl1 = float(0)
+fl2 = float(0)
+fl3 = float(0)
+fl4 = float(0)
+fl5 = float(0)#Defining float storage slots
+fl6 = float(0)
+fl7 = float(0)
+fl8 = float(0)
+fl9 = float(0)
+fl10 = float(0)
+str1 = ""
+str2 = ""
+str3 = ""
+str4 = ""
+str5 = ""#defining string storage slots
+str6 = ""
+str7 = ""
+str8 = ""
+str9 = ""
+str10 = ""
+list1 = []
+list2 = []
+list3 = []
+list4 = []
+list5 = []#defining list slots
+list6 = []
+list7 = []
+list8 = []
+list9 = []
+list10 = []
+time.sleep(3)
+print("Variables opened! float: 10	string: 10	Blank lists: 10	total: 30\n")
+time.sleep(3)
+print("Lighting up...")
+time.sleep(3)
+print("Lights are on!\n")
+time.sleep(3)
+print("Welcome to LumenOS setup")
+time.sleep(1)
+print("please type 1 for on and 0 for off")
+while True:
+	completenotifs = input("completenotifs: recieve a notification when a command completes>>>")	
+	if completenotifs == "0":
+		print("Off: you will not recieve a notification when you finish a command")
+		break
+	elif completenotifs == "1":
+		print("On: you will now see 'Command complete!' every time you finish a command")
+		break
+	else:
+		print("ERROR: Invalid choice. Please type 0 or 1")
+while True:
+	varautostore = input("varautostore: Automatically store calculation answers to an empty variable>>>")
+	if varautostore == "0":
+		print("Off: you will be asked if you want to store a value at the end of certain commands")
+		break
+	elif varautostore == "1":
+		print("On: Outputs will be automatically stored to any empty variable")
+		break
+	else:
+		print("ERROR: Invalid choice. Please type 0 or 1")
+print("LumenOS Setup complete! You can always change these options with LOS.settings")
+print("Booting CLI...\n")
+time.sleep(3)
+print("Welcome to LumenOS!")
+print("Type LOS.help for command list or LOS.info to learn a bit about LumenOS")
+time.sleep(1)
+while True:
+	c_exec = input("Please type a LumenOS command>>>")
+	if c_exec == "LOS.help":
+		los_help()
+	elif c_exec == "LOS.info":
+		los_info()
+	elif c_exec == "LOS.settings":
+		los_settings()
