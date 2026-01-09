@@ -27,11 +27,18 @@
         "Fur type": "Brown",
         "Privacy": false
     },
-    "": {
+    "Tommy": {
         "Age": "No age provided",
         "Age in dog years": "No age providedNo age providedNo age providedNo age providedNo age providedNo age providedNo age provided",
         "Breed": "",
         "Fur type": "",
         "Privacy": true
+    },
+    "Void": {
+        "Age": 2,
+        "Age in dog years": 14,
+        "Breed": "German shepherd",
+        "Fur type": "Short",
+        "Privacy": false
     }
 }
