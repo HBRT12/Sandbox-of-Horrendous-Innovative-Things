@@ -1,7 +1,7 @@
 import json  # Needed for saving data
-import os
-import time
-import uuid
+import os  # Needed to check system info for clear
+import time  # needed for time delays
+import uuid  # Needed to uniquely store entries
 
 try:
     with open("./Dog/Stored_dogs.json") as dogs:  # Imports data from JSON
